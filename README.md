@@ -28,3 +28,5 @@ ReactDOM.render(
 
 also remember to add the browser router and routing in App.tsx
 
+## Resources
+1. https://beta.reactjs.org/learn/
