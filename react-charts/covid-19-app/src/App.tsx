@@ -1,53 +1,8 @@
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
+import GlobalInfo from "./components/GlobalInfo";
+import { ResponseData } from "./types";
 
-// Date: "2022-10-27T03:57:28.241Z"
-// ​​
-// NewConfirmed: 558051
-// ​​
-// NewDeaths: 2017
-// ​​
-// NewRecovered: 0
-// ​​
-// TotalConfirmed: 627131701
-// ​​
-// TotalDeaths: 6576077
-// ​​
-// TotalRecovered: 0
-
-type Country = {
-  Country: string;
-  CountryCode: string;
-  Date: string;
-  ID: string;
-  NewConfirmed: number;
-  NewDeaths: number;
-  NewRecovered: number;
-  Premium: unknown;
-  Slug: string;
-  TotalConfirmed: number;
-  TotalDeaths: number;
-  TotalRecovered: number;
-};
-
-type GlobalData = {
-  Date: string;
-  NewConfirmed: number;
-  NewDeaths: number;
-  NewRecovered: number;
-  TotalConfirmed: number;
-  TotalDeaths: number;
-  TotalRecovered: number;
-};
-
-type ResponseData = {
-  Cuntries: Country[];
-  Date: string;
-  Global: GlobalData;
-  ID: string;
-  Message: string;
-};
-
-const App: React.FunctionComponent = () => {
+const App: FC = () => {
   const [data, setData] = useState<ResponseData | undefined>(undefined);
 
   const fetchData = async () => {
@@ -63,7 +18,15 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <h1>Global covid 19</h1>
+      {data ? (
+        <GlobalInfo
+          newConfirmed={data?.Global.NewConfirmed}
+          newDeaths={data?.Global.NewDeaths}
+          newRecovered={data?.Global.NewRecovered}
+        />
+      ) : (
+        "Loading..."
+      )}
     </div>
   );
 };
