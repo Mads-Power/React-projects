@@ -24,7 +24,7 @@ export type GlobalData = {
 };
 
 export type ResponseData = {
-  Cuntries: Country[];
+  Countries: Country[];
   Date: string;
   Global: GlobalData;
   ID: string;
