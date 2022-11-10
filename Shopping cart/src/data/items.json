@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Book",
+        "price": 10.99,
+        "imgUrl": "/imgs/book.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Computer",
+        "price": 109.99,
+        "imgUrl": "/imgs/book.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Banana",
+        "price": 1.99,
+        "imgUrl": "/imgs/book.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Clock",
+        "price": 13.99,
+        "imgUrl": "/imgs/book.jpg"
+    },
+    {
+        "id": 5,
+        "name": "phone",
+        "price": 17.99,
+        "imgUrl": "/imgs/book.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Candles",
+        "price": 8,
+        "imgUrl": "/imgs/book.jpg"
+    }
+]
