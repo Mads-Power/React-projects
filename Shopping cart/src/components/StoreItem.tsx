@@ -43,7 +43,7 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
           className="d-flex align-items-center justify-content-center"
           style={{ gap: ".5rem" }}
         >
-          <Button variant="danger" size="sm" className="m-3">remove</Button>
+          <Button variant="danger" size="sm" className="m-3">Remove</Button>
         </div>
       </div>
     </Card>
