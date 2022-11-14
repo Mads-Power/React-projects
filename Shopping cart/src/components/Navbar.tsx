@@ -22,39 +22,8 @@ export function Navbar() {
           variant="outline-primary"
           className="rounded-circle"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <path
-              fill="#ffcc5c"
-              d="m9.651 8.81 14.215.917a1 1 0 0 1 .906 1.24l-1.52 6.079a1 1 0 0 1-.97.757h-11.22"
-            />
-            <path
-              fill="#ffcc5c"
-              d="m9.651 8.81 14.215.917a1 1 0 0 1 .906 1.24l-1.52 6.079a1 1 0 0 1-.97.757h-11.22"
-            />
-            <path
-              fill="#f7b546"
-              d="m23.866 9.727-1.087-.07c.007.102.02.205-.007.311l-.952 3.807a4 4 0 0 1-3.881 3.03h-7.034l.157 1h11.219a1 1 0 0 0 .97-.757l1.52-6.079a1 1 0 0 0-.905-1.242z"
-            />
-            <path
-              fill="none"
-              stroke="#4c6d86"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              d="M24.937 22.804H10.423c-.901 0-1.342-1.098-.693-1.721l.962-.923a1 1 0 0 0 .297-.863L9.185 6.663a1 1 0 0 0-.99-.859H6.062"
-            />
-            <path
-              fill="none"
-              stroke="#d5e5f1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="10"
-              d="M13.438 25.804H9.5m11.938 0H18.5"
-            />
-            <circle cx="13.562" cy="24.804" r="1.5" fill="#617e95" />
-            <circle cx="21.562" cy="24.804" r="1.5" fill="#617e95" />
-            <circle cx="13.562" cy="24.804" r=".5" fill="#d5e5f1" />
-            <circle cx="21.562" cy="24.804" r=".5" fill="#d5e5f1" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21.5,15a3,3,0,0,0-1.9-2.78l1.87-7a1,1,0,0,0-.18-.87A1,1,0,0,0,20.5,4H6.8L6.47,2.74A1,1,0,0,0,5.5,2h-2V4H4.73l2.48,9.26a1,1,0,0,0,1,.74H18.5a1,1,0,0,1,0,2H5.5a1,1,0,0,0,0,2H6.68a3,3,0,1,0,5.64,0h2.36a3,3,0,1,0,5.82,1,2.94,2.94,0,0,0-.4-1.47A3,3,0,0,0,21.5,15Zm-3.91-3H9L7.34,6H19.2ZM9.5,20a1,1,0,1,1,1-1A1,1,0,0,1,9.5,20Zm8,0a1,1,0,1,1,1-1A1,1,0,0,1,17.5,20Z" />
           </svg>
           <div
             className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
@@ -62,9 +31,10 @@ export function Navbar() {
               color: "white",
               width: "1.5rem",
               height: "1.5rem",
-              position: "absolute", bottom: 0, right: 0,
-              transform:"translate(25%,25%)"
-
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              transform: "translate(25%,25%)",
             }}
           >
             3
